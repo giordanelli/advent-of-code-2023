@@ -11,15 +11,13 @@ public abstract class Puzzle {
     this.fileInputPath = fileInputPath;
   }
 
-  public final void readInputAndRun() {
-    String fileContent;
+  protected String getInputContent(){
     try {
-      fileContent = FileReader.fileContent(fileInputPath);
+      return FileReader.fileContent(fileInputPath);
     } catch (IOException e) {
-      throw new RuntimeException("Unable to read input file", e);
+      throw new RuntimeException(e);
     }
-    run(fileContent);
   }
 
-  public abstract void run(String input);
+  public abstract void run();
 }

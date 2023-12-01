@@ -10,6 +10,6 @@ public abstract class Day {
   }
 
   public final void run() {
-    puzzles.forEach(Puzzle::readInputAndRun);
+    puzzles.forEach(Puzzle::run);
   }
 }
