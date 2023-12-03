@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Day1 extends Day {
   public Day1() {
-    super(List.of(new Puzzle1("day1/input.txt"), new Puzzle2("day1/input.txt")));
+    super(List.of(new Puzzle1("day1.txt"), new Puzzle2("day1.txt")));
   }
 
   public static void main(String[] args) {
