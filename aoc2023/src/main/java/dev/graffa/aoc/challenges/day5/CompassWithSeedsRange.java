@@ -13,6 +13,7 @@ import static dev.graffa.aoc.challenges.day5.Compass.IndicationType.SOIL_TO_FERT
 import static dev.graffa.aoc.challenges.day5.Compass.IndicationType.TEMPERATURE_TO_HUMIDITY;
 import static dev.graffa.aoc.challenges.day5.Compass.IndicationType.WATER_TO_LIGHT;
 
+//FIXME does not work with very big input
 public class CompassWithSeedsRange extends Compass {
   public CompassWithSeedsRange(String fileInputPath) {
     super(fileInputPath);
